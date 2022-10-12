@@ -15,6 +15,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
+    var totalposts: Int!
     
 
     override func viewDidLoad() {
@@ -25,11 +26,34 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    
+    
+    func increasePost(){
+        totalposts = totalposts + 5
+        let query = PFQuery(className: "Posts")
+        query.includeKey("author")
+        //totalposts = 10
+        query.limit = totalposts
+        
+        query.findObjectsInBackground { (posts,error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+            else{
+                print("Here is the error")
+            }
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = 20
+        totalposts = 10
+        query.limit = totalposts
         
         query.findObjectsInBackground { (posts,error) in
             if posts != nil {
@@ -70,6 +94,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+            if indexPath.row + 1 == posts.count {
+
+                increasePost()
+
+            }
+
+        }
+    
 
     /*
     // MARK: - Navigation
