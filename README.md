@@ -17,10 +17,10 @@ The following **required** functionality is completed:
 The following **bonus** features are implemented:
 
 - [ ] User can pull to refresh. (1pt)
-- [ ] User can load past posts infinitely. (2pts)
+- [X] User can load past posts infinitely. (2pts)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-![Imgur](https://imgur.com/NvPK3nv.gif)
+![Imgur](https://imgur.com/MVxUkBH.gif)
