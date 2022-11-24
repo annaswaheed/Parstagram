@@ -11,47 +11,8 @@ The following **required** functionality is completed:
 - [X] User stays logged in across restarts. (1pt)
 - [X] User can log out. (1pt)
 - [X] User can view comments on a post. (3pts)
-- [X] User can add a new comment. (5pts)
-
-
-
-## Sprint 2 Issues Completed
-- [X] Make Today Trending Stock screen dynamic
-@annaswaheed
-@manuelcastroFau
-
-- [X] investigate how the visualization of price data as graph
-@annaswaheed
-
-- [X] create a user profile in swift UI
-@Velo23
-
-
-- [X] write the library for the Yahoo API to get the stock info
-@annaswaheed
-@manuelcastroFau
-
-
-
-## Sprint 1 Issues Completed
-
-- [X] Login Page UI.
-@manuelcastroFau
-
-
-- [X] User should be able to login
-@manuelcastroFau
-
-
-- [X] create the List of stocks UI
-@annaswaheed
-@manuelcastroFau
-
-- [X] Connect the application to the back4apps
-@manuelcastroFau
-
-
-
+- [X] User can add a new comment. (5pts). 
+- 
 The following **bonus** features are implemented:
 
 - [ ] User can add a profile picture. (2pts)
