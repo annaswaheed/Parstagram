@@ -51,3 +51,6 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ![Imgur](https://imgur.com/MVxUkBH.gif)
+
+
+![Imgur](https://imgur.com/sTFzY4z.gif)
